@@ -1,0 +1,45 @@
+# Netlify CMS Configuration
+# Your friend uses this panel to publish poems — no coding needed!
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Allow editorial workflow (draft → review → publish)
+publish_mode: editorial_workflow
+
+# Where uploaded images go
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "poems"
+    label: "Poems"
+    folder: "data/poems-cms"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "The title of your poem" }
+      - label: "Tag / Category"
+        name: "tag"
+        widget: "select"
+        options: ["love", "nature", "life", "pain", "hope", "other"]
+        default: "life"
+      - { label: "Date", name: "date", widget: "string", hint: "e.g. April 2025" }
+      - label: "Poem (full text)"
+        name: "body"
+        widget: "text"
+        hint: "Write your full poem here. Press Enter for new lines."
+      - label: "Excerpt (first few lines)"
+        name: "excerpt"
+        widget: "text"
+        hint: "A short preview shown on the poems list (2-4 lines)"
+      - label: "Cover Image (optional)"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Optional image to display with the poem"
+      - label: "Featured on Homepage?"
+        name: "featured"
+        widget: "boolean"
+        default: false

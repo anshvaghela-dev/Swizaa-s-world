@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Midnight Rain",
+    "tag": "nature",
+    "date": "April 2025",
+    "excerpt": "The rain speaks in a language\nonly the lonely understand,\neach drop a word unsaid,\neach puddle a memory pooled.",
+    "body": "The rain speaks in a language\nonly the lonely understand,\neach drop a word unsaid,\neach puddle a memory pooled.\n\nI stood at the window\nwatching the world dissolve,\nwondering if the sky too\nhad someone it couldn't forget.\n\nMidnight rain — you are\nthe only honest thing\nin a world that learned\nto smile through its storms.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Letters Never Sent",
+    "tag": "love",
+    "date": "March 2025",
+    "excerpt": "I wrote you a hundred letters\nin the margins of my sleep,\nwords that tasted like goodbye\nbut felt like please stay.",
+    "body": "I wrote you a hundred letters\nin the margins of my sleep,\nwords that tasted like goodbye\nbut felt like please stay.\n\nEach one folded into silence,\ntucked beneath the weight\nof everything I almost said\nwhen you were still within reach.\n\nMaybe one day the wind\nwill carry them to you —\nand you'll know, without opening them,\nthat they were always yours.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "The Space Between Stars",
+    "tag": "hope",
+    "date": "February 2025",
+    "excerpt": "We are not the stars, my love,\nwe are the space between them —\nthe dark that makes the light\nworth looking for.",
+    "body": "We are not the stars, my love,\nwe are the space between them —\nthe dark that makes the light\nworth looking for.\n\nIn the vast quiet of the universe\nI found you, not shining,\nbut present — the way silence\nis present after a song ends.\n\nAnd I thought: this is enough.\nThis is more than enough.\nTo be the space where someone\nchooses to rest their eyes.",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Autumn Knows",
+    "tag": "nature",
+    "date": "January 2025",
+    "excerpt": "Autumn knows how to let go\nwithout making it look like loss —\nit turns everything golden first,\nthen releases.",
+    "body": "Autumn knows how to let go\nwithout making it look like loss —\nit turns everything golden first,\nthen releases.\n\nI am learning from the trees.\nHow to shed what no longer serves,\nhow to stand bare and unashamed\nand trust that spring remembers.\n\nEvery leaf that falls\nis a lesson in surrender —\nnot defeat, but grace.\nNot ending, but becoming.",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Soft Grief",
+    "tag": "pain",
+    "date": "December 2024",
+    "excerpt": "There is a grief that doesn't scream.\nIt sits with you at breakfast,\nstirs your coffee slowly,\nand says nothing.",
+    "body": "There is a grief that doesn't scream.\nIt sits with you at breakfast,\nstirs your coffee slowly,\nand says nothing.\n\nIt follows you to work,\nwaits outside the meeting room,\nwalks home beside you\nwhen the streetlights come on.\n\nSoft grief is the hardest kind —\nbecause no one sees it,\nand you learn to carry it\nlike a second heartbeat.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Still Here",
+    "tag": "life",
+    "date": "November 2024",
+    "excerpt": "After everything —\nthe storms, the silences,\nthe nights that had no morning —\nI am still here.",
+    "body": "After everything —\nthe storms, the silences,\nthe nights that had no morning —\nI am still here.\n\nNot unbroken. Not the same.\nBut here, with coffee in my hands\nand sunlight on the floor\nand something that feels like hope.\n\nStill here is enough.\nStill here is everything.\nStill here is the bravest thing\nI have ever done.",
+    "featured": false
+  }
+]

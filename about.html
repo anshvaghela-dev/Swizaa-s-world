@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Swizza's World</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- DESKTOP NAV -->
+  <nav class="navbar desktop-nav">
+    <div class="nav-logo">Swizza<span>'s</span> World</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MOBILE BOTTOM NAVBAR -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="index.html" class="bottom-nav-item" aria-label="Home">
+      <span class="bnav-ripple"></span>
+      <svg class="bnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+      <span class="bnav-label">Home</span>
+    </a>
+    <a href="poems.html" class="bottom-nav-item" aria-label="Poems">
+      <span class="bnav-ripple"></span>
+      <svg class="bnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      <span class="bnav-label">Poems</span>
+    </a>
+    <a href="about.html" class="bottom-nav-item active" aria-label="About">
+      <span class="bnav-ripple"></span>
+      <svg class="bnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span class="bnav-label">About</span>
+    </a>
+    <a href="contact.html" class="bottom-nav-item" aria-label="Contact">
+      <span class="bnav-ripple"></span>
+      <svg class="bnav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      <span class="bnav-label">Contact</span>
+    </a>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-image-wrap">
+      <div class="about-image-placeholder">
+        <!-- Replace src with her actual photo -->
+        <img src="images/poet.jpg" alt="Poet portrait" onerror="this.style.display='none'" />
+        <div class="image-fallback">✦</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="about-label">The Poet</p>
+      <h1>Swizza</h1>
+      <p class="about-bio">
+        She writes because silence has too much to say. Born from the quiet corners of the world, 
+        her poetry explores love, loss, nature, and the in-between spaces where emotions live 
+        without names.
+      </p>
+      <p class="about-bio">
+        Every poem here is a piece of her — raw, honest, and unapologetically human. 
+        She believes words are the only bridges that truly connect souls.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num" id="poemCount">0</span>
+          <span class="stat-label">Poems</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2025</span>
+          <span class="stat-label">Since</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Emotions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Swizza<span>'s</span> World</div>
+      <p>© 2025 · All poems are original works.</p>
+      <div class="footer-links">
+        <a href="poems.html">Poems</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>
