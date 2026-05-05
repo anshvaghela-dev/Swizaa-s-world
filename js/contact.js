@@ -1,6 +1,7 @@
 /* ============================================
-   contact.js — Contact form logic
-   Uses Formspree (free, no backend needed)
+   contact.js — Contact form
+   Messages go to Swizasworls@gmail.com
+   via Formspree (free, no backend needed)
    ============================================ */
 
 const form = document.getElementById('contactForm');
@@ -11,8 +12,12 @@ if (form) {
     e.preventDefault();
 
     const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+
+    // Loading state
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
+    status.textContent = '';
 
     const data = new FormData(form);
 
@@ -24,17 +29,23 @@ if (form) {
       });
 
       if (res.ok) {
-        status.textContent = '✦ Message sent. She will read every word.';
+        // Success
+        status.textContent = '✦ Message sent. Swizza will read every word.';
         status.style.color = 'var(--accent)';
         form.reset();
       } else {
-        throw new Error('Form submission failed');
+        const json = await res.json();
+        // Formspree returns errors array
+        if (json.errors) {
+          throw new Error(json.errors.map(e => e.message).join(', '));
+        }
+        throw new Error('Submission failed');
       }
-    } catch {
-      status.textContent = 'Something went wrong. Try emailing directly.';
+    } catch (err) {
+      status.textContent = '✦ Something went wrong. Email her directly at Swizasworls@gmail.com';
       status.style.color = '#e05c7a';
     } finally {
-      submitBtn.textContent = 'Send Message ✦';
+      submitBtn.textContent = originalText;
       submitBtn.disabled = false;
     }
   });

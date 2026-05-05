@@ -67,6 +67,9 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="6" placeholder="Write your thoughts here..." required></textarea>
         </div>
+        <!-- Hidden field — replies go to Swizza's email -->
+        <input type="hidden" name="_replyto" value="Swizasworls@gmail.com" />
+        <input type="hidden" name="_subject" value="New message from Swizza's World 🌸" />
         <button type="submit" class="btn-primary">Send Message ✦</button>
         <p class="form-note" id="formStatus"></p>
       </form>
